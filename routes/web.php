@@ -54,4 +54,9 @@ Route::post('email/resend', 'Auth\VerificationController@resend')->name('verific
 // 上面这句是自动生成的，将其修改如下，统一调用风格：
 //Route::get('/home', 'HomeController@index')->name('home');
 
+// 个人页面
+
+
+Route::resource('users', 'UsersController', ['only' => ['show', 'update', 'edit']]);
+
 
