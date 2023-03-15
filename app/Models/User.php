@@ -44,4 +44,10 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // 与话题模型的关联
+    public function topics()
+    {
+        return $this->hasMany(Topic::class);
+    }
 }
