@@ -66,3 +66,5 @@ Route::resource('projects', 'ProjectsController', ['only' => ['index', 'show', '
 
 // 根据分类显示话题列表
 Route::resource('categories', 'CategoriesController', ['only' => ['show']]);
+// 话题发布页面添加图片上传功能
+Route::post('upload_image', 'TopicsController@uploadImage')->name('topics.upload_image');
