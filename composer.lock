@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "99c509cbba05925a821b9f1e815c41c0",
+    "content-hash": "cfc4a9dee4eae53b0ef62a72712809fb",
     "packages": [
         {
             "name": "brick/math",
@@ -3300,6 +3300,68 @@
                 }
             ],
             "time": "2023-01-12T01:45:14+00:00"
+        },
+        {
+            "name": "summerblue/laravel-active",
+            "version": "9.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/summerblue-ext-forks/active.git",
+                "reference": "5a1ef52544f2792de0857bb474ab3c80b5ba235c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.huaweicloud.com/repository/php/summerblue/laravel-active/9.0.0/summerblue-laravel-active-9.0.0.zip",
+                "reference": "5a1ef52544f2792de0857bb474ab3c80b5ba235c",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "9.*",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "orchestra/testbench": "^3.1",
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "HieuLe\\Active\\ActiveServiceProvider"
+                    ],
+                    "aliases": {
+                        "Active": "HieuLe\\Active\\Facades\\Active"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "HieuLe\\Active\\": "src/",
+                    "HieuLe\\ActiveTest\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hieu Le",
+                    "email": "letrunghieu.cse09@gmail.com",
+                    "homepage": "https://www.hieule.info"
+                }
+            ],
+            "description": "The helper class for Laravel (4/5) applications to get active class base on current route",
+            "homepage": "https://github.com/summerblue-ext-forks/active",
+            "keywords": [
+                "active",
+                "laravel",
+                "routing"
+            ],
+            "time": "2022-03-06T09:14:53+00:00"
         },
         {
             "name": "symfony/console",
