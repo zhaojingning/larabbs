@@ -49,7 +49,9 @@
                   <select class="form-control" name="category_id">
                     <option value="" hidden disabled selected>请选择分类</option>
                     @foreach ($categories as $value)
-                    <option value="{{ $value->id }}">{{ $value->name }}</option>
+                    <option value="{{ $value->id }}"
+                       {{ $topic->category_id == $value->id ? 'selected' : ''}}
+                      >{{ $value->name }}</option>
                     @endforeach
                   </select>
                 </div>
