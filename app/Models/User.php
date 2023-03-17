@@ -26,6 +26,11 @@ class User extends Authenticatable implements MustVerifyEmail
         'avatar'
     ];
 
+    public function replies()
+    {
+        return $this->hasMany(Reply::class);
+    }
+
     /**
      * The attributes that should be hidden for serialization.
      *
