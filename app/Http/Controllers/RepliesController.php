@@ -20,9 +20,9 @@ class RepliesController extends Controller
 		return view('replies.index', compact('replies'));
 	}
 
-    public function show(Reply $reply)
+    public function show(Reply $replies)
     {
-        return view('replies.show', compact('reply'));
+        return view('replies.show', compact('replies'));
     }
 
 	public function create(Reply $reply)
