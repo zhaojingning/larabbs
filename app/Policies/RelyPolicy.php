@@ -15,6 +15,6 @@ class RelyPolicy extends Policy
 
     public function destroy(User $user, Rely $rely)
     {
-        return true;
+        return $user->isAuthorOf($reply) || $user->isAuthorOf($reply->topic);
     }
 }
