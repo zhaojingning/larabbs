@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Auth;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
+    use Traits\ActiveUserHelper;
+    
     use HasApiTokens, HasFactory, MustVerifyEmailTrait;
 
     use Notifiable {
